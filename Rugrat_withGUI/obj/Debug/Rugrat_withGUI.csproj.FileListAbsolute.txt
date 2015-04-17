@@ -1,0 +1,13 @@
+c:\users\vishank\documents\visual studio 2013\Projects\Rugrat_withGUI\Rugrat_withGUI\bin\Debug\Rugrat_withGUI.exe.config
+c:\users\vishank\documents\visual studio 2013\Projects\Rugrat_withGUI\Rugrat_withGUI\obj\Debug\Rugrat_withGUI.csprojResolveAssemblyReference.cache
+c:\users\vishank\documents\visual studio 2013\Projects\Rugrat_withGUI\Rugrat_withGUI\obj\Debug\MainWindow.baml
+c:\users\vishank\documents\visual studio 2013\Projects\Rugrat_withGUI\Rugrat_withGUI\obj\Debug\MainWindow.g.cs
+c:\users\vishank\documents\visual studio 2013\Projects\Rugrat_withGUI\Rugrat_withGUI\obj\Debug\App.g.cs
+c:\users\vishank\documents\visual studio 2013\Projects\Rugrat_withGUI\Rugrat_withGUI\obj\Debug\Rugrat_withGUI_MarkupCompile.cache
+c:\users\vishank\documents\visual studio 2013\Projects\Rugrat_withGUI\Rugrat_withGUI\obj\Debug\Rugrat_withGUI.g.resources
+c:\users\vishank\documents\visual studio 2013\Projects\Rugrat_withGUI\Rugrat_withGUI\obj\Debug\Rugrat_withGUI.Properties.Resources.resources
+c:\users\vishank\documents\visual studio 2013\Projects\Rugrat_withGUI\Rugrat_withGUI\obj\Debug\Rugrat_withGUI.csproj.GenerateResource.Cache
+c:\users\vishank\documents\visual studio 2013\Projects\Rugrat_withGUI\Rugrat_withGUI\bin\Debug\Rugrat_withGUI.exe
+c:\users\vishank\documents\visual studio 2013\Projects\Rugrat_withGUI\Rugrat_withGUI\bin\Debug\Rugrat_withGUI.pdb
+c:\users\vishank\documents\visual studio 2013\Projects\Rugrat_withGUI\Rugrat_withGUI\obj\Debug\Rugrat_withGUI.exe
+c:\users\vishank\documents\visual studio 2013\Projects\Rugrat_withGUI\Rugrat_withGUI\obj\Debug\Rugrat_withGUI.pdb
