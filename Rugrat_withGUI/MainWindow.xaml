@@ -17,7 +17,6 @@
         <Label x:Name="lblNamePrefix" Content="Class Name Prefix of Your Choice:" HorizontalAlignment="Left" Margin="35,303,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Franklin Gothic Medium"/>
         <Label x:Name="lblMaxMethod" Content="Max. number of Methods per class:" HorizontalAlignment="Left" Margin="27,337,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Franklin Gothic Medium"/>
         <Label x:Name="lblMinParam" Content="Min. number of Parameters per method:" HorizontalAlignment="Left" Margin="-4,371,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Franklin Gothic Medium"/>
-        <Label x:Name="lblAllowedType" Content="Allowed Type:" HorizontalAlignment="Left" Margin="156,439,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Franklin Gothic Medium"/>
         <TextBox x:Name="txtNoOfClasses" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="7,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="206" FontSize="14" FontFamily="Franklin Gothic Medium"/>
         <TextBox x:Name="txtMethodCalls" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="7,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="206" FontSize="14" FontFamily="Franklin Gothic Medium"/>
         <TextBox x:Name="txtArraySize" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="7,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="206" FontSize="14" FontFamily="Franklin Gothic Medium"/>
@@ -28,7 +27,6 @@
         <TextBox x:Name="txtMaxMethod" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="7,337,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="206" FontSize="14" FontFamily="Franklin Gothic Medium"/>
         <TextBox x:Name="txtMinParam" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="7,371,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="206" FontSize="14" FontFamily="Franklin Gothic Medium"/>
         <TextBox x:Name="txtIntMaxValue" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="7,405,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="206" FontSize="14" FontFamily="Franklin Gothic Medium"/>
-        <TextBox x:Name="txtAllowedType" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="7,439,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="206" FontSize="14" FontFamily="Franklin Gothic Medium"/>
         <Label x:Name="lblNoOfClasses" Content="Enter the Number of Classes:" HorizontalAlignment="Left" Margin="64,93,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Franklin Gothic Medium"/>
         <Button x:Name="btnUseConfig" Content="USE EXISTING CONFIG.XML" HorizontalAlignment="Left" Margin="44,490,0,0" VerticalAlignment="Top" Width="204" Height="34" FontFamily="Segoe WP Black" FontSize="14">
             <Button.Background>

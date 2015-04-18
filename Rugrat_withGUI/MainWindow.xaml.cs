@@ -28,22 +28,27 @@ namespace Rugrat_withGUI
             InitializeComponent();
         }
 
-        private void btnGenerate_Click(object sender, RoutedEventArgs e)
-        {
-             
-        }
 
         private void btnClear_Click(object sender, RoutedEventArgs e)
         {
+            txtArraySize.Text = "";
+            txtIntMaxValue.Text = "";
+            txtMaxMethod.Text = "";
             txtMaxParam.Text = "";
+            txtMethodCalls.Text = "";
+            txtMinParam.Text = "";
+            txtNamePrefix.Text = "";
+            txtNestedIF.Text = "";
+            txtNoOfClasses.Text = "";
+            txtTotalLOC.Text = "";
         }
 
 
         private void btnSaveConfig_Click(object sender, RoutedEventArgs e)
         {
-
+            saveConfigToXML();
         }
-
+        //This is Generate C# code button
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             saveConfigToXML();
@@ -61,7 +66,6 @@ namespace Rugrat_withGUI
             dictionary.Add("MaxMethod", txtMaxMethod.Text.ToString());
             dictionary.Add("MinParam", txtMinParam.Text.ToString());
             dictionary.Add("IntMaxValue", txtIntMaxValue.Text.ToString());
-            dictionary.Add("AllowedType", txtAllowedType.Text.ToString());
             return dictionary;
         }
 
@@ -168,7 +172,7 @@ namespace Rugrat_withGUI
 
             writer.WriteStartElement("allowedTypes");
             writer.WriteStartElement("type");
-            writer.WriteString(returned_Dictionary["AllowedType"].ToString());
+            writer.WriteString("int");
             writer.WriteEndElement();
             writer.WriteEndElement();
 
