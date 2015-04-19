@@ -87,8 +87,6 @@ namespace edu.uta.cse.proggen.configurationParser
 			}
 		}
 
-//JAVA TO C# CONVERTER WARNING: Method 'throws' clauses are not available in .NET:
-//ORIGINAL LINE: public static void parseProperties() throws Exception
 		public static void parseProperties()
 		{
             XmlNode root = RootNode;
@@ -110,8 +108,6 @@ namespace edu.uta.cse.proggen.configurationParser
 			}
 		}
 
-//JAVA TO C# CONVERTER WARNING: Method 'throws' clauses are not available in .NET:
-//ORIGINAL LINE: private static void parseAllowedTypes(org.w3c.dom.Node node) throws Exception
         private static void parseAllowedTypes(XmlNode node)
 		{
 			if (!node.Name.Equals("allowedTypes"))

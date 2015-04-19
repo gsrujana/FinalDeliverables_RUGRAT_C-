@@ -24,3 +24,16 @@ C:\Users\Vishank\Documents\GitHub\iteration3_RUGRAT_version1\Rugrat_withGUI\obj\
 C:\Users\Vishank\Documents\GitHub\iteration3_RUGRAT_version1\Rugrat_withGUI\obj\Debug\Rugrat_withGUI.g.resources
 C:\Users\Vishank\Documents\GitHub\iteration3_RUGRAT_version1\Rugrat_withGUI\obj\Debug\Rugrat_withGUI.Properties.Resources.resources
 C:\Users\Vishank\Documents\GitHub\iteration3_RUGRAT_version1\Rugrat_withGUI\obj\Debug\Rugrat_withGUI.csproj.GenerateResource.Cache
+C:\Users\Samuel\Documents\GitHub\iteration3_RUGRAT_version1\Rugrat_withGUI\bin\Debug\Rugrat_withGUI.exe.config
+C:\Users\Samuel\Documents\GitHub\iteration3_RUGRAT_version1\Rugrat_withGUI\obj\Debug\Rugrat_withGUI.exe
+C:\Users\Samuel\Documents\GitHub\iteration3_RUGRAT_version1\Rugrat_withGUI\obj\Debug\Rugrat_withGUI.pdb
+C:\Users\Samuel\Documents\GitHub\iteration3_RUGRAT_version1\Rugrat_withGUI\bin\Debug\Rugrat_withGUI.exe
+C:\Users\Samuel\Documents\GitHub\iteration3_RUGRAT_version1\Rugrat_withGUI\bin\Debug\Rugrat_withGUI.pdb
+C:\Users\Samuel\Documents\GitHub\iteration3_RUGRAT_version1\Rugrat_withGUI\obj\Debug\Rugrat_withGUI.csprojResolveAssemblyReference.cache
+C:\Users\Samuel\Documents\GitHub\iteration3_RUGRAT_version1\Rugrat_withGUI\obj\Debug\MainWindow.baml
+C:\Users\Samuel\Documents\GitHub\iteration3_RUGRAT_version1\Rugrat_withGUI\obj\Debug\MainWindow.g.cs
+C:\Users\Samuel\Documents\GitHub\iteration3_RUGRAT_version1\Rugrat_withGUI\obj\Debug\App.g.cs
+C:\Users\Samuel\Documents\GitHub\iteration3_RUGRAT_version1\Rugrat_withGUI\obj\Debug\Rugrat_withGUI_MarkupCompile.cache
+C:\Users\Samuel\Documents\GitHub\iteration3_RUGRAT_version1\Rugrat_withGUI\obj\Debug\Rugrat_withGUI.g.resources
+C:\Users\Samuel\Documents\GitHub\iteration3_RUGRAT_version1\Rugrat_withGUI\obj\Debug\Rugrat_withGUI.Properties.Resources.resources
+C:\Users\Samuel\Documents\GitHub\iteration3_RUGRAT_version1\Rugrat_withGUI\obj\Debug\Rugrat_withGUI.csproj.GenerateResource.Cache

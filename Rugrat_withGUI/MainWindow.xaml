@@ -28,7 +28,7 @@
         <TextBox x:Name="txtMinParam" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="7,371,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="206" FontSize="14" FontFamily="Franklin Gothic Medium"/>
         <TextBox x:Name="txtIntMaxValue" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="7,405,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="206" FontSize="14" FontFamily="Franklin Gothic Medium"/>
         <Label x:Name="lblNoOfClasses" Content="Enter the Number of Classes:" HorizontalAlignment="Left" Margin="64,93,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Franklin Gothic Medium"/>
-        <Button x:Name="btnUseConfig" Content="USE EXISTING CONFIG.XML" HorizontalAlignment="Left" Margin="44,490,0,0" VerticalAlignment="Top" Width="204" Height="34" FontFamily="Segoe WP Black" FontSize="14">
+        <Button x:Name="btnUseConfig" Content="USE EXISTING CONFIG.XML" HorizontalAlignment="Left" Margin="44,490,0,0" VerticalAlignment="Top" Width="204" Height="34" FontFamily="Segoe WP Black" FontSize="14" Click="btnUseConfig_Click">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                     <GradientStop Color="#FFF3F3F3" Offset="0"/>
@@ -38,7 +38,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button x:Name="btnGenerate" Content="GENERATE C# CODE" HorizontalAlignment="Left" Margin="177,593,0,0" VerticalAlignment="Top" Width="181" Height="36" FontFamily="Segoe WP Black" FontSize="16" Grid.ColumnSpan="2" Click="Button_Click">
+        <Button x:Name="btnGenerate" Content="GENERATE C# CODE" HorizontalAlignment="Left" Margin="177,593,0,0" VerticalAlignment="Top" Width="181" Height="36" FontFamily="Segoe WP Black" FontSize="16" Grid.ColumnSpan="2" Click="btnGenerate_Click">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                     <GradientStop Color="#FFF3F3F3" Offset="0"/>

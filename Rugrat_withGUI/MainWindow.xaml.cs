@@ -14,6 +14,8 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Xml;
 using System.Data;
+using Microsoft.Win32;
+using edu.uta.cse.proggen.configurationParser;
 
 namespace Rugrat_withGUI
 {
@@ -47,11 +49,20 @@ namespace Rugrat_withGUI
         private void btnSaveConfig_Click(object sender, RoutedEventArgs e)
         {
             saveConfigToXML();
+
+            MessageBox.Show("XML File is saved in the default location : \n" + Start.Start.PathToDir);
         }
         //This is Generate C# code button
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void btnGenerate_Click(object sender, RoutedEventArgs e)
         {
+            String[] args = { };
+
             saveConfigToXML();
+
+            Start.Start.Main1(args);
+            //Application.Exit();
+
+            MessageBox.Show("C# Files are created successfully based on the given parameters.! Check the path: \n " + Start.Start.PathToDir);
         }
         public Dictionary<string, string> retrieveFormFields()
         {
@@ -179,7 +190,57 @@ namespace Rugrat_withGUI
             writer.WriteEndElement();
             writer.WriteEndDocument();
             writer.Close();
-            MessageBox.Show("XML File created ! ");
+            
+        }
+
+        private void btnUseConfig_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+            LoadXMLParser lxp = new LoadXMLParser();
+            Dictionary<string, string> properties;
+            HashSet<string> typeList;
+            String filePath, fileName;
+
+            if (ofd.ShowDialog() == true)
+            {
+                filePath = ofd.FileName;
+                fileName = ofd.SafeFileName;
+                if (!filePath.Equals(""))
+                {
+                    properties = lxp.loadXMLFile(filePath);
+                    typeList = lxp.TypeList;
+
+                    txtNoOfClasses.Text = properties["noOfClasses"];
+                    txtMethodCalls.Text = properties["maxAllowedMethodCalls"];
+                    txtArraySize.Text = properties["maximumArraySize"];
+                    txtNestedIF.Text = properties["maxNestedIfs"];
+                    txtMaxParam.Text = properties["maxNoOfParametersPerMethod"];
+                    txtTotalLOC.Text = properties["totalLOC"];
+                    txtNamePrefix.Text = properties["classNamePrefix"];
+                    txtMaxMethod.Text = properties["maxNoOfMethodsPerClass"];
+                    txtMinParam.Text = properties["minNoOfParametersPerMethod"];
+                    txtIntMaxValue.Text = properties["intMaxValue"];
+
+                    validateAllowedTypes(typeList);
+
+                    MessageBox.Show(fileName + " is loaded to the GUI successfully ! ");
+                }
+                else
+                {
+                    MessageBox.Show("Invalid File Path ! ");
+                }
+            }
+        }
+
+        public void validateAllowedTypes(HashSet<string> typeList)
+        {
+            foreach (String type in typeList)
+            {
+                if (!type.Equals("int"))
+                {
+                    MessageBox.Show(type + " datatype is not allowed in this version..! ");
+                }
+            }
         }
         
     }

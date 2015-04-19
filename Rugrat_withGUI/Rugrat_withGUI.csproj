@@ -53,6 +53,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="LoadXMLParsor.cs" />
     <Compile Include="Query.cs" />
     <Compile Include="QueryFileParser.cs" />
     <Compile Include="QueryResult.cs" />
