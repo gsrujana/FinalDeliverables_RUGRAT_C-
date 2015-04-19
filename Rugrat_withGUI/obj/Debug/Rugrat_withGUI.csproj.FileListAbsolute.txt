@@ -37,3 +37,5 @@ C:\Users\Samuel\Documents\GitHub\iteration3_RUGRAT_version1\Rugrat_withGUI\obj\D
 C:\Users\Samuel\Documents\GitHub\iteration3_RUGRAT_version1\Rugrat_withGUI\obj\Debug\Rugrat_withGUI.g.resources
 C:\Users\Samuel\Documents\GitHub\iteration3_RUGRAT_version1\Rugrat_withGUI\obj\Debug\Rugrat_withGUI.Properties.Resources.resources
 C:\Users\Samuel\Documents\GitHub\iteration3_RUGRAT_version1\Rugrat_withGUI\obj\Debug\Rugrat_withGUI.csproj.GenerateResource.Cache
+C:\Users\Samuel\Documents\GitHub\iteration3_RUGRAT_version1\Rugrat_withGUI\bin\Debug\nunit.framework.dll
+C:\Users\Samuel\Documents\GitHub\iteration3_RUGRAT_version1\Rugrat_withGUI\bin\Debug\nunit.framework.xml

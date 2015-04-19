@@ -8,19 +8,19 @@ using NUnit.Framework;
 
 namespace ConsoleApplication4.NUnit_TestCases
 {
-    using Expression = edu.uta.cse.proggen.nodes.Expression;
+    using Operand = edu.uta.cse.proggen.nodes.Operand;
+
     [TestFixture]
-    public class ExpressionTestCase
+    public class OperandTestCase
     {
 
         [Test]
-        public void ExpressionTest()
+        public void OperandTest()
         {
 
-            Expression ex = new Expression();
-
-            Assert.AreEqual(null, ex.ToString());
+            Operand o = new Operand();
+            const string literal = "";
+            Assert.AreEqual(literal, o.ToString());
         }
     }
-
 }

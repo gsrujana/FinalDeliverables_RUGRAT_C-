@@ -8,19 +8,18 @@ using NUnit.Framework;
 
 namespace ConsoleApplication4.NUnit_TestCases
 {
-    using Expression = edu.uta.cse.proggen.nodes.Expression;
+    using Operator = edu.uta.cse.proggen.nodes.Operator;
+
     [TestFixture]
-    public class ExpressionTestCase
+    public class OperatorTestCase
     {
 
         [Test]
-        public void ExpressionTest()
+        public void OperatorTest()
         {
+            Operator op = new Operator();
 
-            Expression ex = new Expression();
-
-            Assert.AreEqual(null, ex.ToString());
+            Assert.AreEqual("Not extended", op.ToString());
         }
     }
-
 }
