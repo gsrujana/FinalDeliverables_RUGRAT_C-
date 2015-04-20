@@ -10,9 +10,9 @@ using ClassGenerator = edu.uta.cse.proggen.namespaceLevelElements.ClassGenerator
 using Variable = edu.uta.cse.proggen.classLevelElements.Variable;
 using Primitives = edu.uta.cse.proggen.classLevelElements.Type.Primitives;
 using MethodSignature = edu.uta.cse.proggen.classLevelElements.MethodSignature;
-using SetUp = ConsoleApplication4.NUnit_TestCases.SetUpTestCase;
+using SetUp = Rugrat_withGUI.NUnit_TestCases.SetUpTestCase;
 
-namespace ConsoleApplication4.NUnit_TestCases
+namespace Rugrat_withGUI.NUnit_TestCases
 {
     [TestFixture, Description("TestFixture for MethodSignature.cs")]
     public class MethodSigTestCase

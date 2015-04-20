@@ -55,7 +55,9 @@
     </ApplicationDefinition>
     <Compile Include="LoadXMLParsor.cs" />
     <Compile Include="NUnit TestCases\BinaryOperatorTestCase.cs" />
+    <Compile Include="NUnit TestCases\ConfigXMLTestCase.cs" />
     <Compile Include="NUnit TestCases\ExpressionTestCase.cs" />
+    <Compile Include="NUnit TestCases\LoadXMLTestCase.cs" />
     <Compile Include="NUnit TestCases\MethodSigTestCase.cs" />
     <Compile Include="NUnit TestCases\MethodTestCase.cs" />
     <Compile Include="NUnit TestCases\OperandTestCase.cs" />

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using NUnit.Framework;
 
-namespace ConsoleApplication4.NUnit_TestCases
+namespace Rugrat_withGUI.NUnit_TestCases
 {
     using Primitives = edu.uta.cse.proggen.classLevelElements.Type.Primitives;
     using Type = edu.uta.cse.proggen.classLevelElements.Type;

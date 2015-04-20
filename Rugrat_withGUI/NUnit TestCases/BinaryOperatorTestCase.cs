@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using edu.uta.cse.proggen.operators;
 using NUnit.Framework;
 
-namespace ConsoleApplication4.NUnit_TestCases
+namespace Rugrat_withGUI.NUnit_TestCases
 {
     using Primitives = edu.uta.cse.proggen.classLevelElements.Type.Primitives;
     using BinaryOperator = edu.uta.cse.proggen.operators.BinaryOperator;

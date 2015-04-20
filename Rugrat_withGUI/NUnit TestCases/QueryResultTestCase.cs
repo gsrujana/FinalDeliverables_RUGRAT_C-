@@ -7,7 +7,7 @@ using edu.uta.cse.proggen.configurationParser;
 using NUnit.Framework;
 using Type = edu.uta.cse.proggen.classLevelElements.Type;
 
-namespace ConsoleApplication4.NUnit_TestCases
+namespace Rugrat_withGUI.NUnit_TestCases
 {
     [TestFixture, Description("TestFixture for QueryResult.cs")]
     public class QueryResultTestCase

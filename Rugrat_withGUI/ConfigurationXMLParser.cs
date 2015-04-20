@@ -128,6 +128,14 @@ namespace edu.uta.cse.proggen.configurationParser
 			}
 		}
 
+        public static Dictionary<string, string> Properties
+        {
+            get
+            {
+                return properties;
+            }
+        }
+
 		public static string getProperty(string property)
 		{
 			return properties[property];

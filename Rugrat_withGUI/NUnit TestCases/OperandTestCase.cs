@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using edu.uta.cse.proggen.nodes;
 using NUnit.Framework;
 
-namespace ConsoleApplication4.NUnit_TestCases
+namespace Rugrat_withGUI.NUnit_TestCases
 {
     using Operand = edu.uta.cse.proggen.nodes.Operand;
 

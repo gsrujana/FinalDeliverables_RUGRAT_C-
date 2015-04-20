@@ -10,7 +10,7 @@ using ClassGenerator = edu.uta.cse.proggen.namespaceLevelElements.ClassGenerator
 using Start = edu.uta.cse.proggen.start.Start.Start;
 using Variable = edu.uta.cse.proggen.classLevelElements.Variable;
 
-namespace ConsoleApplication4.NUnit_TestCases
+namespace Rugrat_withGUI.NUnit_TestCases
 {
 
     [SetUpFixture, Description("SetUp for all the Test Cases of Rugrat")]
