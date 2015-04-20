@@ -80,15 +80,6 @@ namespace edu.uta.cse.proggen.expressions
 				rightExpr = new NormalExpression(method, primitive);
 				Operator binOp = new BinaryOperator(primitive);
 
-				// Removing variable from right expr. if binOp is / or %
-				// i6=(i3/2)%(i3-5)  => i6=(i3/2)%constant
-                //if (binOp.ToString().Equals("/") || binOp.ToString().Equals("%"))
-                //{
-                //    do
-                //    { //FIXME: only handles int for now.
-                //        rightExpr = new Literal(primitive,Int32.MaxValue);
-                //    }while (rightExpr.ToString().Contains("(0)")); //avoiding divide by (0)
-                //}
 
 				output += lhs + " = (" + lhs.Type + ")(" + leftExpr + binOp.ToString() + rightExpr + ");\n";
 			}

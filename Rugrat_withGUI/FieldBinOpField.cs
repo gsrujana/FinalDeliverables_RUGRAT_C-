@@ -47,17 +47,6 @@ namespace edu.uta.cse.proggen.expressions
                 rightOprnd = new Literal(primitive, Int32.MaxValue);
 			}
 
-			// for division and modulo operations, keeping only literals in the right expr.
-			// i5%i3 => i5%constantValue OR f2/f4 => f2/constantValue
-
-            //if (binOp.ToString().Equals("/") || binOp.ToString().Equals("%"))
-            //{
-            //    do
-            //    { //FIXME: only handles int for now.
-            //        rightOprnd = new Literal(primitive, Int32.MaxValue);
-            //    }while (rightOprnd.ToString().Contains("(0)")); //avoiding divide by (0)
-            //}
-
 		}
 
 		public override string ToString()

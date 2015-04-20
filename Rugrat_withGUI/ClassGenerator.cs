@@ -46,10 +46,7 @@ namespace edu.uta.cse.proggen.namespaceLevelElements
 
       
         private Random rand = new Random();
-
-        //private static Int64 randInput = Convert.ToInt16(9999);
-        //private Random rand = new Random(randInput);
-      
+     
 
 		private HashSet<Field> usedFields = new HashSet<Field>();
 		private List<Field> fields = new List<Field>();
@@ -132,13 +129,7 @@ namespace edu.uta.cse.proggen.namespaceLevelElements
 			preGeneratedClasses.Add(fileName);
 			preGenerate = true;
 		}
-        //Veena : Added this to test what was wrong.
-        //public static void Main(string[] args)
-       // {
-       //     ClassGenerator test = new ClassGenerator("TP0", 100 / 5, null);
-      //      Console.Write(test);
-      //      Console.ReadLine();
-       // }
+   
 		/// <summary>
 		/// Generates the actual body or content of the class 
 		/// and updates the set  'generatedClasses' Set of </summary>
@@ -158,11 +149,7 @@ namespace edu.uta.cse.proggen.namespaceLevelElements
 				preGenerateForMethodSignature(classList, preGeneratedClasses);
 			}
 
-            //append import statements
-            //if (ProgGenUtil.useQueries)
-            //{
-            //    appendImportStatements();
-            //}
+         
 
 			// append namespace name
 			appendNamespaceName();

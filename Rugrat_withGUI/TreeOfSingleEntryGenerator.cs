@@ -108,58 +108,7 @@ namespace edu.uta.cse.proggen.namespaceLevelElements
 				for (int i = 0; i < loop; i++)
 				{
 
-                    try
-                    {
-                        //Srujana:Commenting out this code as we have level=LEVEL
-                        //                    String file = DirPath + "TestPrograms" + Path.PathSeparator + "edu" + Path.PathSeparator + "uta" + Path.PathSeparator + "cse6324" + Path.PathSeparator + "team6" + Path.PathSeparator + "test" + Path.PathSeparator + "TStart_L" + level + "_" + i + ".cs";
-
-
-                        //                    System.IO.StreamWriter fileWriter = new System.IO.StreamWriter(file);
-                        //                    //System.IO.StreamWriter writer = new System.IO.StreamWriter(fileWriter);
-
-                        //                    StringBuilder output = new StringBuilder();
-
-                        //                    output.Append("using System;\n\n\n");
-                        //                    output.Append("namespace edu.uta.cse6324.team6.test{\n\n\n");
-                        //                    output.Append("public class TStart_L" + level + "_" + i + "{\n");
-                        //                    for (int k = 0; k < ProgGenUtil.maxNoOfParameters; k++)
-                        //                    {
-                        //                        output.Append("private static int f" + k + ";\n");
-                        //                    }
-
-                        //                    output.Append("\n\n");
-                        //                    output.Append("public static void entryMethod(");
-                        //                    //int i0, int i1, int i2, int i3, int i4, int i5, int i6){\n");					
-                        //                    output.Append(formalParam + "){\n");
-
-                        //                    for (int k = 0; k < ProgGenUtil.maxNoOfParameters; k++)
-                        //                    {
-                        //                        output.Append("f" + k + " = " + "i" + k + ";\n");
-                        //                    }
-
-
-                        //                    for (int j = 0; j < methCallLimit && count < target; j++, count++)
-                        //                    {
-                        //                        // call Tj.SingleEntry();
-                        ////						output.append("FiveMLOC"+count+".singleEntry(f0,f1,f2,f3,f4,f5,f6);\n");
-                        //                        output.Append(ConfigurationXMLParser.getProperty("classNamePrefix") + count + ".singleEntry(" + argument + ");\n");
-                        //                    }
-
-                        //                    output.Append("}\n}");
-
-                        //                    string @out = output.ToString();
-                        ////					System.out.println("Writing L0 level entry classes.");
-
-                        //                    fileWriter.Write(@out);
-                        //                    fileWriter.Close();
-
-
-                    }
-                    catch (Exception e)
-                    {
-                        Console.WriteLine(e.ToString());
-                        Console.Write(e.StackTrace);
-                    }
+                  //
                 }
 
                 createClass(level + 1, loop);
@@ -169,22 +118,19 @@ namespace edu.uta.cse.proggen.namespaceLevelElements
             {
                 if (level == LEVEL)
                 {
-                    // create FiveMLOCStart.cs class that will call
-                    // FiveMLOCStart_L(prevLevel)_0.entryMethod();				
+                    				
                     try
                     {
                         String file = @"C:\cse 6324\rugrat\TestPrograms\edu\uta\cse6324\team6\test\" + ConfigurationXMLParser.getProperty("classNamePrefix") + "Start" + ".cs";
 
-	//					File file = new File("./FiveMLOCStart.cs");
+
 						System.IO.StreamWriter fileWriter = new System.IO.StreamWriter(file);
-						//System.IO.StreamWriter writer = new System.IO.StreamWriter(fileWriter);
+					
 
 						StringBuilder output = new StringBuilder();
 
                         output.Append("using System;\n\n\n");
                         output.Append("namespace edu.uta.cse6324.team6.test{\n\n\n");
-						//output.Append("namespace edu.uta.cse6324.team6.test;\n\n");
-	//					output.append("public class FiveMLOCStart {\n");
 						output.Append("public class " + ConfigurationXMLParser.getProperty("classNamePrefix") + "Start {\n");
 						for (int k = 0; k < ProgGenUtil.maxNoOfParameters; k++)
 						{
@@ -194,7 +140,6 @@ namespace edu.uta.cse.proggen.namespaceLevelElements
 						output.Append("\n\n");
 
 						output.Append("public static void entryMethod(");
-						//int i0, int i1, int i2, int i3, int i4, int i5, int i6){\n");
 
 
 						output.Append(formalParam + "){\n");
@@ -259,13 +204,11 @@ namespace edu.uta.cse.proggen.namespaceLevelElements
 
 							String file = DirPath + "TestPrograms" + Path.PathSeparator + "com" + Path.PathSeparator + "accenture" + Path.PathSeparator + "lab" + Path.PathSeparator + "carfast" + Path.PathSeparator + "test" + Path.PathSeparator + "TStart_L" + level + "_" + i + ".cs";
 
-	                    //	File file = new File("./TStart_L"+level+"_"+i+".cs");
+	                    
 							System.IO.StreamWriter fileWriter = new System.IO.StreamWriter(file);
-						//	System.IO.StreamWriter writer = new System.IO.StreamWriter(fileWriter);
-
+					
 							StringBuilder output = new StringBuilder();
 
-						//	output.Append("namespace edu.uta.cse6324.team6.test;\n\n");
                             output.Append("using System;\n\n\n");
                             output.Append("namespace edu.uta.cse6324.team6.test{\n\n\n");
 							output.Append("public class TStart_L" + level + "_" + i + "{\n");
@@ -276,8 +219,7 @@ namespace edu.uta.cse.proggen.namespaceLevelElements
 
 							output.Append("\n\n");
 
-							output.Append("public static void entryMethod(");
-							//int i0, int i1, int i2, int i3, int i4, int i5, int i6){\n");						
+							output.Append("public static void entryMethod(");					
 
 							output.Append(formalParam + "){\n");
 
@@ -296,7 +238,7 @@ namespace edu.uta.cse.proggen.namespaceLevelElements
 
 
 							string @out = output.ToString();
-	//						System.out.println("Writing mid level classes.");
+
 
 							fileWriter.Write(@out);
                             fileWriter.Close();

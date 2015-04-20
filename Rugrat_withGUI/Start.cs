@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Text;
 using System.IO;
-using edu.uta.cse.proggen;
 
 
 
@@ -102,14 +101,13 @@ namespace edu.uta.cse.proggen.start.Start
 
                 }
                 string path = @"C:\cse 6324\rugrat\TestPrograms\edu\uta\cse6324\team6\test";
-                //Directory directory = Directory.CreateDirectory(path);
+            
                 DirectoryInfo directory = Directory.CreateDirectory(path);
-                //System.IO.FileStream fs = System.IO.File.Create(pathString);
+             
 
 
                 if (!directory.Exists)
                 {
-                    //Console.WriteLine(directory.mkdirs());
                     directory = System.IO.Directory.CreateDirectory(path);
                     Console.WriteLine(directory);
                 }
@@ -299,11 +297,7 @@ namespace edu.uta.cse.proggen.start.Start
 			{
 				try
 				{
-						/*if (outstream != null)
-						{
-							outstream.flush();
-							outstream.close();
-						}*/
+						//
 				}
 					catch (IOException e)
 					{

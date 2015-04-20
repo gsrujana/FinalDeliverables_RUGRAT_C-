@@ -56,68 +56,7 @@ namespace edu.uta.cse.proggen.util
         /// </summary>
         /// 
 
-        //Commented by veena
-        //public sealed class CallType
-        //{
-        //    public static readonly CallType localWithoutRecursionLimit, localWithRecursionLimit, crossClassWithoutRecursionLimit, crossClassWithRecursionLimit = new CallType("localWithoutRecursionLimit, localWithRecursionLimit, crossClassWithoutRecursionLimit, crossClassWithRecursionLimit", InnerEnum.localWithoutRecursionLimit, localWithRecursionLimit, crossClassWithoutRecursionLimit, crossClassWithRecursionLimit);
-
-        //    private static readonly IList<CallType> valueList = new List<CallType>();
-
-        //    static CallType()
-        //    {
-
-        //        valueList.Add(localWithoutRecursionLimit, localWithRecursionLimit, crossClassWithoutRecursionLimit, crossClassWithRecursionLimit);
-        //    }
-
-        //    public enum InnerEnum
-        //    {
-        //        localWithoutRecursionLimit, localWithRecursionLimit, crossClassWithoutRecursionLimit, crossClassWithRecursionLimit
-        //    }
-
-        //    private readonly string nameValue;
-        //    private readonly int ordinalValue;
-        //    private readonly InnerEnum innerEnumValue;
-        //    private static int nextOrdinal = 0;
-
-        //    private CallType(string name, InnerEnum innerEnum)
-        //    {
-        //        nameValue = name;
-        //        ordinalValue = nextOrdinal++;
-        //        innerEnumValue = innerEnum;
-        //    }
-
-        //    public static IList<CallType> values()
-        //    {
-        //        return valueList;
-        //    }
-
-        //    public InnerEnum InnerEnumValue()
-        //    {
-        //        return innerEnumValue;
-        //    }
-
-        //    public int ordinal()
-        //    {
-        //        return ordinalValue;
-        //    }
-
-        //    public override string ToString()
-        //    {
-        //        return nameValue;
-        //    }
-
-        //    public static CallType valueOf(string name)
-        //    {
-        //        foreach (CallType enumInstance in CallType.values())
-        //        {
-        //            if (enumInstance.nameValue == name)
-        //            {
-        //                return enumInstance;
-        //            }
-        //        }
-        //        throw new System.ArgumentException(name);
-        //    }
-        //}
+        
         public static CallType methodCallType;
 
         private static int maximumArraySize = 2;
@@ -206,16 +145,7 @@ namespace edu.uta.cse.proggen.util
             // Hence commenting the try block
             try
             {
-                //StringBuilder buffer = new StringBuilder();
-                //System.IO.StreamReader reader = new System.IO.StreamReader(injectFileName);
-                //System.IO.StreamReader buffReader = new System.IO.StreamReader(reader);
-                //string str = "";
-                //while ((str = buffReader.ReadLine()) != null)
-                //{
-                //    buffer.Append(str);
-                //    buffer.Append("\n");
-                //}
-                //injectContents = buffer.ToString();
+               //
             }
             catch (FileNotFoundException)
             {
@@ -325,36 +255,7 @@ namespace edu.uta.cse.proggen.util
             return null;
         }
 
-        /// <summary>
-        /// Method to fetch fields which are of OBJECT primitive type.
-        /// </summary>
-        /// <param name="variableList">
-        /// @return </param>
-        //JAVA TO C# CONVERTER TODO TASK: Java wildcard generics are not converted to .NET:
-        //ORIGINAL LINE: private static java.util.ArrayList<? extends edu.uta.cse.proggen.classLevelElements.Field> getObjects(java.util.ArrayList<? extends edu.uta.cse.proggen.classLevelElements.Field> variableList)
-        //JAVA TO C# CONVERTER TODO TASK: Java wildcard generics are not converted to .NET:
-        //ORIGINAL LINE: private static java.util.ArrayList<? extends edu.uta.cse.proggen.classLevelElements.Field> getObjects(java.util.ArrayList<? extends edu.uta.cse.proggen.classLevelElements.Field> variableList)
-        //static void Cat<T> (IList<T> sources)
-
-
-
-        //Veena : Again unreachable Code. 
-        // THis is if Objects are being created. Since we are not doing inheritence/Objects, it's Unreacheble.
-        //So dont waste time converting it. Get a Life :P
-        //private static List<T> getObjects(List<T> variableList) where ? : edu.uta.cse.proggen.classLevelElements.Field where T1 : edu.uta.cse.proggen.classLevelElements.Field
-        //{
-        //    List<Field> objList = new List<Field>();
-
-        //    foreach (Field @var in variableList)
-        //    {
-        //        if (@var.Type.Type == Type.Primitives.OBJECT)
-        //        {
-        //            objList.Add(@var);
-        //        }
-        //    }
-        //    return objList;
-        //}
-
+      
         private static string getParametersForList(List<Variable> parameterList, Method method)
         {
             string parameters = "";
@@ -530,70 +431,7 @@ namespace edu.uta.cse.proggen.util
             }
             else
             {
-                //Veena : tested in eclipse. Never comes here Since we are not handling objects.
-                //cross-class method calls.
-                //Random random = new Random();
-                //List<Field> objList = new List<Field>();
-
-                //objList.AddRange(getObjects(method.AssociatedClass.Fields));
-                //objList.AddRange(getObjects(method.ParameterList));
-
-                //if (objList.Count != 0)
-                //{
-                //    ArrayList list = getClassByMethodReturnType(objList, returnType.getType(), classList);
-                //    if (list == null)
-                //    {
-                //        return lhs + " = " + (new Literal(returnType.getType())).ToString() + ";";
-                //    }
-
-                //    Field variable = (Field)list[0];
-                //    ClassGenerator classObj = (ClassGenerator)list[1];
-
-                //    if (classObj != null)
-                //    {
-                //        List<MethodSignature> signatures = classObj.getMethodSignatures(returnType);
-                //        if (signatures.Count == 0)
-                //        {
-                //            return lhs + " = " + (new Literal(returnType.getType())).ToString() + ";";
-                //        }
-
-                //        MethodSignature signature = signatures[random.Next(signatures.Count)];
-                //        string varString = variable.ToString();
-                //        string methodCall = signature.Name + "(" + getParametersForList(signature.ParameterList, method) + ");\n";
-
-                //        if (!signature.Static)
-                //        {
-                //            if (method.Static && !variable.Static)
-                //            {
-                //                if (!variable.Name.StartsWith("var", StringComparison.Ordinal))
-                //                {
-                //                    stmt += "classObj.";
-                //                }
-                //            }
-                //            stmt += varString + " = new " + variable.Type + "();\n";
-                //        }
-
-                //        stmt += lhs + " = ";
-
-                //        if (method.Static && !variable.Static && !variable.Name.StartsWith("var", StringComparison.Ordinal) && !signature.Static)
-                //        {
-                //            stmt += "classObj.";
-                //        }
-
-                //        if (signature.Static)
-                //        {
-                //            stmt += classObj.FileName + "." + methodCall;
-                //        }
-                //        else
-                //        {
-                //            stmt += varString + "." + methodCall;
-                //        }
-                //        method.Loc = method.Loc + 1;
-                //        method.CalledMethods.Add(signature);
-                //        method.CalledMethodsWithClassName.Add(variable.Type + "." + method.Name);
-                //        return stmt;
-                //    }
-                //}
+                //
             }
             return lhs + " = " + (new Literal(returnType.getType(), Int32.MaxValue)).ToString() + ";";
         }
@@ -688,56 +526,7 @@ namespace edu.uta.cse.proggen.util
             }
             else
             {
-                //cross-class method calls.
-                //Veena : tested in eclipse. Never comes here Since we are not handling objects.
-                //Random random = new Random();
-                //List<Field> objList = new List<Field>();
-
-                //objList.AddRange(getObjects(method.AssociatedClass.Fields));
-                //objList.AddRange(getObjects(method.ParameterList));
-
-                //if (objList.Count != 0)
-                //{
-                //    Field variable = objList[random.Next(objList.Count)];
-                //    ClassGenerator classObj = getClassByName(classList, variable.Type.ToString());
-                //    if (classObj != null)
-                //    {
-                //        string varString = variable.ToString();
-                //        List<MethodSignature> signatures = classObj.MethodSignatures;
-                //        MethodSignature signature = signatures[random.Next(signatures.Count)];
-                //        string methodCall = signature.Name + "(" + getParametersForList(signature.ParameterList, method) + ");\n";
-
-                //        if (!signature.Static)
-                //        {
-                //            if (method.Static && !variable.Static)
-                //            {
-                //                if (!variable.Name.StartsWith("var", StringComparison.Ordinal))
-                //                {
-                //                    stmt += "classObj.";
-                //                }
-                //            }
-                //            stmt += varString + " = new " + variable.Type + "();\n";
-                //        }
-
-                //        if (method.Static && !variable.Static && !variable.Name.StartsWith("var", StringComparison.Ordinal) && !signature.Static)
-                //        {
-                //            stmt += "classObj.";
-                //        }
-
-                //        if (signature.Static)
-                //        {
-                //            stmt += classObj.FileName + "." + methodCall;
-                //        }
-                //        else
-                //        {
-                //            stmt += varString + "." + methodCall;
-                //        }
-                //        method.Loc = method.Loc + 1;
-                //        method.CalledMethods.Add(signature);
-                //        method.CalledMethodsWithClassName.Add(variable.Type + "." + signature.Name);
-                //        return stmt;
-                //    }
-                //}
+               //
             }
             return stmt;
         }

@@ -8,10 +8,7 @@ namespace edu.uta.cse.proggen.configurationParser
 
     using XMLException = System.Xml.XmlException;
     using IOException = System.IO.IOException;
-    //using Document = org.w3c.dom.Document;
-    //using Node = org.w3c.dom.Node;
-    //using NodeList = org.w3c.dom.NodeList;
-    //using SAXException = org.xml.sax.SAXException;
+    
 
 	using Start = edu.uta.cse.proggen.start.Start;
 
@@ -63,13 +60,7 @@ namespace edu.uta.cse.proggen.configurationParser
 				Console.Write(e.StackTrace);
 				Environment.Exit(1);
 			}
-            //catch (SAXException e)
-            //{
-            //    Console.WriteLine("error parsing XML configuration!");
-            //    Console.WriteLine(e.ToString());
-            //    Console.Write(e.StackTrace);
-            //    Environment.Exit(1);
-            //}
+        
             catch (IOException e)
             {
                 Console.WriteLine("error processing XML configuration file!");

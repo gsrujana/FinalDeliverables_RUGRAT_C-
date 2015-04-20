@@ -36,7 +36,7 @@ namespace edu.uta.cse.proggen.namespaceLevelElements
 
 		private void appendNamespaceName()
 		{
-			//program += "namespace edu.uta.cse6324.team6.test;\n\n\n";
+			
             //Srujana: using System import necessary for all C# programs
             program += "using System;\n\n\n";
             //Srujana: C# packages are called namespaces
@@ -67,9 +67,7 @@ namespace edu.uta.cse.proggen.namespaceLevelElements
 			string f = fields.ToString();
 			f = f.Substring(0, fields.Length - 1);
 
-	//		for(ClassGenerator cls : listOfClasses){
-	//			program += cls.getFileName()+"." + "singleEntry(" + f + ");\n";
-	//		}	
+
 			int indx = 0;
 			int totalClass = listOfClasses.Count;
 			for (int i = 0; i < noOfMethCalls; i++)
