@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<RUGRAT>
+  <useQueries>false</useQueries>
+  <injectFilename />
+  <password />
+  <allowIndirectRecursion>no</allowIndirectRecursion>
+  <doReachabilityMatrix>no</doReachabilityMatrix>
+  <noOfInheritanceChains>0</noOfInheritanceChains>
+  <probability>0</probability>
+  <minNoOfClassFields>0</minNoOfClassFields>
+  <allowArray>no</allowArray>
+  <maxRecursionDepth>1</maxRecursionDepth>
+  <maxNoOfClassFields>0</maxNoOfClassFields>
+  <recursionProbability>0</recursionProbability>
+  <callType>MCO1_2</callType>
+  <noOfClasses>3</noOfClasses>
+  <maxAllowedMethodCalls>2</maxAllowedMethodCalls>
+  <maximumArraySize>2</maximumArraySize>
+  <maxNestedIfs>2</maxNestedIfs>
+  <maxNoOfParametersPerMethod>5</maxNoOfParametersPerMethod>
+  <totalLOC>100</totalLOC>
+  <classNamePrefix>T</classNamePrefix>
+  <maxNoOfMethodsPerClass>3</maxNoOfMethodsPerClass>
+  <minNoOfParametersPerMethod>2</minNoOfParametersPerMethod>
+  <intMaxValue>50</intMaxValue>
+  <allowedTypes>
+    <type>int</type>
+  </allowedTypes>
+</RUGRAT>
