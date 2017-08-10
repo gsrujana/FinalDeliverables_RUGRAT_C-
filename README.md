@@ -1,5 +1,7 @@
 # Rugrat_CSharp
-RUGRAT TOOL FOR C#- This tool converts Dr.Csallner's &amp; team's work from java to c#. The code is written by them in Java to auto-generate Java programs. We have changed it to a C# program to auto-generate C# programs.
+RUGRAT TOOL FOR C#- This is a tool built for automatic test code generation as a part of course CSE6324 Advanced Software engineering. Additional Project plan and documentation: https://drive.google.com/drive/folders/0B1iF-VlYLTeqY3Rab2d6MENzSFE?usp=sharing
+
+This tool converts Dr.Csallner's &amp; team's work from java to c#. The code is written by them in Java to auto-generate Java programs. We have changed it to a C# program to auto-generate C# programs.
 <ol>
 <li><h1>Instructions to Run The program</h1></li><hr>
 <ol>
